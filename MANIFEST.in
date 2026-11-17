@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include carbon_mrv_ghg *.css
+recursive-include carbon_mrv_ghg *.csv
+recursive-include carbon_mrv_ghg *.html
+recursive-include carbon_mrv_ghg *.ico
+recursive-include carbon_mrv_ghg *.js
+recursive-include carbon_mrv_ghg *.json
+recursive-include carbon_mrv_ghg *.md
+recursive-include carbon_mrv_ghg *.png
+recursive-include carbon_mrv_ghg *.py
+recursive-include carbon_mrv_ghg *.svg
+recursive-include carbon_mrv_ghg *.txt
+recursive-exclude carbon_mrv_ghg *.pyc
