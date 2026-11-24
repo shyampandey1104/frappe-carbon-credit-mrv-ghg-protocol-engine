@@ -1,15 +1,37 @@
-# Copyright (c) 2026, Shyam Kumar Pandey and contributors
+# Copyright (c) 2026, Shyamkumar Pandey and contributors
 # For license information, please see license.txt
 
-app_name = "frappe-carbon-credit-mrv-ghg-protocol-engine"
+app_name = "carbon_mrv_ghg"
 app_title = "Frappe Carbon Credit Mrv Ghg Protocol Engine"
-app_publisher = "Shyam Kumar Pandey"
-app_description = "Frappe GHG Protocol Scope 1, 2 & 3 Carbon MRV Engine: EU CBAM Border Adjustment, ISO 14064 & Carbon Offset Registry Retirement."
-app_icon = "octicon octicon-book"
-app_color = "#5890FF"
-app_email = "shyamkumarpandey1104@gmail.com"
+app_publisher = "Shyamkumar Pandey"
+app_description = "Frappe Carbon Credit Mrv Ghg Protocol Engine - Enterprise Multi-DocType Solution for Frappe & ERPNext"
+app_email = "shyampandey1104@gmail.com"
 app_license = "MIT"
 
 # Includes in <head>
-app_include_js = "/assets/carbon_mrv_ghg/js/carbon_mrv_ghg.bundle.js"
+# ------------------
 app_include_css = "/assets/carbon_mrv_ghg/css/carbon_mrv_ghg.bundle.css"
+app_include_js = "/assets/carbon_mrv_ghg/js/carbon_mrv_ghg.bundle.js"
+
+# Document Events
+# ---------------
+doc_events = {
+    "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry": {
+        "validate": "carbon_mrv_ghg.services.validator.EnterpriseValidationEngine.validate_compliance_rules",
+        "on_submit": "carbon_mrv_ghg.services.integration_service.EnterpriseIntegrationService.verify_remote_status"
+    }
+}
+
+# Scheduled Background Tasks
+# --------------------------
+scheduler_events = {
+    "hourly": [
+        "carbon_mrv_ghg.tasks.hourly_sync"
+    ],
+    "daily": [
+        "carbon_mrv_ghg.tasks.daily_reconciliation"
+    ],
+    "weekly": [
+        "carbon_mrv_ghg.tasks.weekly_digest"
+    ]
+}

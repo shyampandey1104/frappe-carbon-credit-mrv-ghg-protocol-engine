@@ -1,0 +1,104 @@
+{
+ "charts": [
+  {
+   "chart_name": "Frappe Carbon Credit Mrv Ghg Protocol Engine Volume Trend",
+   "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine Volume Trend"
+  }
+ ],
+ "content": "[{\"type\": \"header\", \"data\": {\"text\": \"Frappe Carbon Credit Mrv Ghg Protocol Engine Workspace\", \"level\": 4}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Frappe Carbon Credit Mrv Ghg Protocol Engine Operations\"}}, {\"type\": \"card\", \"data\": {\"card_name\": \"Audit & Compliance\"}}]",
+ "creation": "2026-04-01 10:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "octicon octicon-package",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine",
+ "links": [
+  {
+   "label": "Operational Documents",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry",
+   "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "label": "Audit & Reports",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Carbon Credit Mrv Ghg Protocol Engine Audit Log",
+   "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine Audit Log",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Audit Log",
+   "link_type": "DocType",
+   "type": "Link"
+  },
+  {
+   "is_query_report": 1,
+   "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine Summary",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Summary",
+   "link_type": "Report",
+   "type": "Link"
+  },
+  {
+   "label": "Configuration",
+   "type": "Card Break"
+  },
+  {
+   "doctype": "Frappe Carbon Credit Mrv Ghg Protocol Engine Settings",
+   "label": "Frappe Carbon Credit Mrv Ghg Protocol Engine Settings",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Settings",
+   "link_type": "DocType",
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-04-01 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Carbon_Mrv_Ghg",
+ "name": "Frappe Carbon Credit Mrv Ghg Protocol Engine",
+ "owner": "Administrator",
+ "public": 1,
+ "quick_lists": [
+  {
+   "document_type": "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry",
+   "label": "Recent Frappe Carbon Credit Mrv Ghg Protocol Engine Entries"
+  }
+ ],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Accounts User"
+  }
+ ],
+ "sequence_id": 1,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "All Frappe Carbon Credit Mrv Ghg Protocol Engine Entrys",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Entry",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "label": "System Settings",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "label": "Compliance Digest",
+   "link_to": "Frappe Carbon Credit Mrv Ghg Protocol Engine Summary",
+   "type": "Report"
+  }
+ ],
+ "title": "Frappe Carbon Credit Mrv Ghg Protocol Engine"
+}
